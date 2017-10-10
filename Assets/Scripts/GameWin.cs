@@ -7,9 +7,11 @@ public class GameWin : MonoBehaviour {
     public static List<GameObject> objectsOnPodium;
 
     private GameObject player;
+    //private AudioSource audio;
 
     private void Start()
     {
+        //audio = gameObject.GetComponent<AudioSource>();
         objectsOnPodium = new List<GameObject>();
         player = GameObject.Find("Podium");
     }
@@ -17,7 +19,8 @@ public class GameWin : MonoBehaviour {
     void Update () {
         if (objectsOnPodium.Count == 4)
         {
-            Invoke("ReleaseCollectedItems", 0.5f);
+            gameObject.GetComponent<AudioSource>().Play();
+            Invoke("ReleaseCollectedItems", 1f);
             player.tag = "TopSticky";
             
         }

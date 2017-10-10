@@ -76,7 +76,7 @@ public class ItemItemInteraction : MonoBehaviour {
     {
         if (this.gameObject.tag == "BadTouch" && collidedWith.gameObject.tag == "TopSticky")
         {
-            // If you have collided with a bad item
+            Debug.Log(gameObject.name);
             playerHealthBarScript.playerHP -= 10.0f;
             gameObject.SetActive(false);
         }
@@ -118,7 +118,6 @@ public class ItemItemInteraction : MonoBehaviour {
                 playerHealthBarScript.playerHP -= 5.0f;
                 displayErrorPopup();
                 gameObject.SetActive(false);
-                Debug.Log("You collected the wrong item! (" + this.gameObject.name + " was collected when had " + currentItemName + ")");
             }
         }
         else if (collidedWith.gameObject.name == "Floor")

@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 94643863}
   - component: {fileID: 94643865}
   - component: {fileID: 94643864}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 298904154}
   - component: {fileID: 298904153}
   - component: {fileID: 298904152}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: NumScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 324235468}
   - component: {fileID: 324235470}
   - component: {fileID: 324235469}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HealthBarBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1050,7 +1050,7 @@ GameObject:
   - component: {fileID: 972582183}
   - component: {fileID: 972582185}
   - component: {fileID: 972582184}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
